@@ -1,0 +1,95 @@
+/* Custom styles for Meraz's personal site */
+
+/* Fix spacing for the body content to account for fixed navbar */
+body {
+    padding-top: 70px;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Hero section styling */
+.hero {
+    position: relative;
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    min-height: 400px;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Section headings */
+h2 {
+    font-weight: 600;
+}
+
+/* Card link styling */
+.stretched-link {
+    position: relative;
+    text-decoration: none;
+}
+
+/* Contact section */
+#contact form input,
+#contact form button {
+    height: 48px;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Simple vertical timeline */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #0d6efd; /* Bootstrap primary color */
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 1.5rem;
+}
+
+.timeline li h5 {
+    margin-bottom: .25rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #0d6efd;
+    left: 6px;
+    top: 4px;
+}
