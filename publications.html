@@ -1,108 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications – Meraz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa4j1k0O1hWOy+9iZC1apNrlgW4tH1P5xbqZ6p5CEbcbe+lN63PhB5LYh9O" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yFhHeGWZAkOTUuEDtM+tT+fCt1wqioKXPRPtWNcVl/+x9n3dN1MGm03P6nXsoDiDBq6SXyrWaV+e7EwZp6rp7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications – Meraz</title>
+  <meta name="description" content="Selected publications and works in progress related to responsible digital transformation, data governance, and sustainability." />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="index.html">Meraz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog Posts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page header -->
-    <header class="hero d-flex align-items-center">
-        <div class="container text-white">
-            <h1 class="display-4 fw-bold">Publications</h1>
-            <p class="lead">A selection of my scholarly articles and conference papers.</p>
-        </div>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-nav-shadow">
+    <div class="container px-3">
+      <a class="navbar-brand fw-semibold site-brand" href="index.html">Meraz</a>
 
-    <!-- Publications list -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Selected Works</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Harnessing AI for Sustainable Energy Systems</h5>
-                        <p class="mb-1"><strong>Journal:</strong> Journal of Clean Technology</p>
-                        <p class="mb-1"><strong>Year:</strong> 2024</p>
-                        <p class="mb-1"><strong>Co-authors:</strong> A. Collaborator, B. Researcher</p>
-                        <p class="mb-0">Investigating how machine learning can optimise renewable energy networks and reduce emissions.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Data-Driven Decision Making in Healthcare</h5>
-                        <p class="mb-1"><strong>Conference:</strong> International Conference on Digital Health</p>
-                        <p class="mb-1"><strong>Year:</strong> 2023</p>
-                        <p class="mb-1"><strong>Co-authors:</strong> C. Scientist, D. Analyst</p>
-                        <p class="mb-0">Exploring predictive analytics to support clinical decision processes and patient outcomes.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Quantifying Innovation in Emerging Technologies</h5>
-                        <p class="mb-1"><strong>Journal:</strong> Technology & Innovation Review</p>
-                        <p class="mb-1"><strong>Year:</strong> 2022</p>
-                        <p class="mb-1"><strong>Co-authors:</strong> E. Scholar</p>
-                        <p class="mb-0">A methodological approach to measure innovation potential using patent and publication data.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Machine Learning for Circular Economy</h5>
-                        <p class="mb-1"><strong>Conference:</strong> Sustainable Systems Symposium</p>
-                        <p class="mb-1"><strong>Year:</strong> 2021</p>
-                        <p class="mb-1"><strong>Co-authors:</strong> F. Researcher, G. Engineer</p>
-                        <p class="mb-0">Using AI algorithms to improve resource efficiency and closed-loop manufacturing systems.</p>
-                    </div>
-                </div>
-            </div>
-            <p class="mt-4">For a complete list of publications, please contact me directly.</p>
-        </div>
-    </section>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <footer>
-  <div class="container max-w-screen px-3">
-    <div class="text-center">
-      <div class="mb-2" style="color: var(--text-main); font-weight:600; letter-spacing:-0.03em;">
-        Meraz • The Explorer Scientist
-      </div>
-      <div class="mb-2">
-        <a href="mailto:your-email@example.com">email me</a>
-        &nbsp;·&nbsp;
-        <a href="about.html">about</a>
-        &nbsp;·&nbsp;
-        <a href="projects.html">projects</a>
-      </div>
-      <div style="color: var(--text-dim);">
-        © 2025. All rights reserved.
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 topnav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BlogPosts</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</footer>
+  </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8Cje1Yjk9RyS9y5Pip5a/pz+rzZJe9lSfa6r8Vt7oIOnc8UGlctkKqzUcRfET" crossorigin="anonymous"></script>
+  <!-- PAGE HEADER -->
+  <section class="work-section" style="padding-top:4rem;padding-bottom:2rem;">
+    <div class="container px-3" style="max-width:900px;">
+      <h1 class="work-heading" style="margin-bottom:1rem;">Publications & Work in Progress</h1>
+      <p class="work-lead">
+        Below are selected research directions and works in progress. My focus
+        is on responsible digital transformation: how organizations justify,
+        govern, and operationalize “responsibility” when they adopt data-driven
+        technologies.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- LIST OF PAPERS -->
+  <section class="work-section" style="padding-top:0;">
+    <div class="container px-3" style="max-width:900px;">
+
+      <div class="mb-4 pb-4 border-bottom">
+        <h2 class="work-row-title" style="text-decoration:none;font-size:1.1rem;">
+          The Role of Data in Responsible Digital Transformation
+        </h2>
+        <p class="work-row-text" style="margin-bottom:.5rem;">
+          Research-in-progress. How do managers select and use data when they
+          pursue responsible digital transformation goals? This work analyzes
+          how decision-makers define “responsibility,” what counts as
+          acceptable evidence, and how tensions emerge between ethics,
+          sustainability, and efficiency.
+        </p>
+        <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+          Target: Information Systems / digital responsibility venues.
+        </p>
+      </div>
+
+      <div class="mb-4 pb-4 border-bottom">
+        <h2 class="work-row-title" style="text-decoration:none;font-size:1.1rem;">
+          Governance, Accountability, and Data Use in Sustainability Transitions
+        </h2>
+        <p class="work-row-text" style="margin-bottom:.5rem;">
+          Conceptual work linking digital governance, sustainability reporting,
+          and managerial accountability. Explores how “responsible AI /
+          responsible digitalization” is being translated into frameworks,
+          dashboards, and audit trails inside organizations.
+        </p>
+        <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+          Status: conceptual framing, qualitative data collection planned.
+        </p>
+      </div>
+
+      <div class="mb-4 pb-4">
+        <h2 class="work-row-title" style="text-decoration:none;font-size:1.1rem;">
+          From Policy Talk to Practice: How Responsibility Gets Operationalized
+        </h2>
+        <p class="work-row-text" style="margin-bottom:.5rem;">
+          Early work examining how “responsibility” (ethics, social impact,
+          ESG-type language) moves from strategy documents into concrete data
+          selection criteria, KPIs, and risk decisions.
+        </p>
+        <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+          Status: draft interview protocol, seeking more managerial voices.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER BAND -->
+  <footer class="footer-band">
+    <div class="container px-3">
+      <div class="row gy-4 gx-5 align-items-start footer-row">
+
+        <div class="col-lg-4">
+          <div class="footer-name">Meraz</div>
+          <div class="footer-desc">
+            Showcasing my academic profile, projects, and ongoing thinking
+            around responsible digital transformation, data governance,
+            and AI in society.
+          </div>
+
+          <div class="footer-social">
+            <a class="footer-social-link" href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Bluesky">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">CONTACT</div>
+          <div class="footer-contact">
+            <a href="mailto:your-email@example.com">ariful.m.islam@jyu.fi</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">BLOGPOST SUBSCRIPTION</div>
+          <div class="footer-sub-desc">
+            Enter your email address to receive updates
+          </div>
+
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Your email"
+            />
+            <button class="footer-btn" type="button">
+              Subscribe to blogpost series
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        Copyright © Meraz, All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
