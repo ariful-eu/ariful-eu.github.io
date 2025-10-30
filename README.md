@@ -1,1 +1,1 @@
-# ariful-eu.githu.io
+# ariful-eu.github.io
