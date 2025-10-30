@@ -1,103 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects – Meraz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa4j1k0O1hWOy+9iZC1apNrlgW4tH1P5xbqZ6p5CEbcbe+lN63PhB5LYh9O" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yFhHeGWZAkOTUuEDtM+tT+fCt1wqioKXPRPtWNcVl/+x9n3dN1MGm03P6nXsoDiDBq6SXyrWaV+e7EwZp6rp7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects – Meraz</title>
+  <meta name="description" content="AI-assisted tools, low-code prototypes, and applied experiments that connect research thinking to practice." />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="index.html">Meraz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog Posts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page header -->
-    <header class="hero d-flex align-items-center">
-        <div class="container text-white">
-            <h1 class="display-4 fw-bold">Projects</h1>
-            <p class="lead">A selection of recent projects highlighting innovation and collaboration.</p>
-        </div>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-nav-shadow">
+    <div class="container px-3">
+      <a class="navbar-brand fw-semibold site-brand" href="index.html">Meraz</a>
 
-    <!-- Projects list -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Featured Projects</h2>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">AI Agents for Knowledge Discovery</h5>
-                        <p class="mb-2"><strong>Role:</strong> Lead Researcher</p>
-                        <p class="mb-2"><strong>Duration:</strong> 2024 – Present</p>
-                        <p class="mb-0">Developing autonomous agents for scientific literature mining to uncover emerging trends and interdisciplinary insights.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Sustainable Manufacturing Analytics</h5>
-                        <p class="mb-2"><strong>Role:</strong> Data Scientist</p>
-                        <p class="mb-2"><strong>Duration:</strong> 2023 – 2024</p>
-                        <p class="mb-0">Applying machine learning models to optimise production processes and reduce waste in manufacturing systems.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Innovation Metrics Dashboard</h5>
-                        <p class="mb-2"><strong>Role:</strong> Project Manager</p>
-                        <p class="mb-2"><strong>Duration:</strong> 2022 – 2023</p>
-                        <p class="mb-0">Designed a dashboard to measure and visualise innovation performance for R&D departments across multiple industries.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="p-4 border rounded-3 h-100">
-                        <h5 class="fw-bold">Community Science Outreach</h5>
-                        <p class="mb-2"><strong>Role:</strong> Coordinator</p>
-                        <p class="mb-2"><strong>Duration:</strong> 2021 – 2022</p>
-                        <p class="mb-0">Organised workshops and events to engage the public with scientific research and promote STEM education.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <footer>
-  <div class="container max-w-screen px-3">
-    <div class="text-center">
-      <div class="mb-2" style="color: var(--text-main); font-weight:600; letter-spacing:-0.03em;">
-        Meraz • The Explorer Scientist
-      </div>
-      <div class="mb-2">
-        <a href="mailto:your-email@example.com">email me</a>
-        &nbsp;·&nbsp;
-        <a href="about.html">about</a>
-        &nbsp;·&nbsp;
-        <a href="projects.html">projects</a>
-      </div>
-      <div style="color: var(--text-dim);">
-        © 2025. All rights reserved.
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 topnav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BlogPosts</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</footer>
+  </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8Cje1Yjk9RyS9y5Pip5a/pz+rzZJe9lSfa6r8Vt7oIOnc8UGlctkKqzUcRfET" crossorigin="anonymous"></script>
+  <!-- PAGE HEADER -->
+  <section class="work-section" style="padding-top:4rem;padding-bottom:2rem;">
+    <div class="container px-3" style="max-width:900px;">
+      <h1 class="work-heading" style="margin-bottom:1rem;">Projects & Prototypes</h1>
+      <p class="work-lead">
+        I build small, focused tools and workflows to test ideas quickly:
+        AI-assisted knowledge helpers, low-code apps, and decision-support
+        concepts. The goal is always the same — make responsible digital
+        transformation real and usable.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- PROJECT ROWS -->
+  <section class="work-section" style="padding-top:0;">
+    <div class="container px-3">
+
+      <!-- Project 1 -->
+      <div class="row align-items-center g-4 work-row">
+        <div class="col-lg-6">
+          <div class="work-image-frame">
+            <img src="images/work-2.jpg" alt="Prototype UI" class="img-fluid rounded-3 work-image" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="work-row-title">Responsible AI / Data Accountability Assistant</h2>
+          <p class="work-row-text">
+            A lightweight assistant concept to help managers document why a
+            certain dataset or metric was chosen in a “responsible” initiative,
+            and what risks were considered. The point: force clarity before
+            decisions disappear into PowerPoint.
+          </p>
+          <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+            Stack: chat-style interface + structured logging.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="row align-items-center g-4 work-row flex-lg-row-reverse">
+        <div class="col-lg-6">
+          <div class="work-image-frame">
+            <img src="images/work-1.jpg" alt="Graph / data viz" class="img-fluid rounded-3 work-image" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="work-row-title">Research Knowledge Retrieval Tool</h2>
+          <p class="work-row-text">
+            A retrieval-style helper for pulling relevant academic insight,
+            policy language, and ethical guidelines on demand — so people making
+            decisions can ground their choices in more than “gut feel”.
+          </p>
+          <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+            Stack: semantic search + curated sources.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="row align-items-center g-4 work-row">
+        <div class="col-lg-6">
+          <div class="work-image-frame">
+            <img src="images/blog-hero.jpg" alt="Innovation concept" class="img-fluid rounded-3 work-image" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h2 class="work-row-title">Decision Support Cheat Sheets</h2>
+          <p class="work-row-text">
+            One-page guides that translate academic language (governance,
+            accountability, sustainability, etc.) into fast questions a manager
+            can actually answer in a meeting.
+          </p>
+          <p class="work-row-text" style="font-size:.85rem;color:#94a3b8;">
+            Format: PDF / slide-ready / copy-paste friendly.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER BAND -->
+  <footer class="footer-band">
+    <div class="container px-3">
+      <div class="row gy-4 gx-5 align-items-start footer-row">
+
+        <div class="col-lg-4">
+          <div class="footer-name">Meraz</div>
+          <div class="footer-desc">
+            Showcasing my academic profile, projects, and ongoing thinking
+            around responsible digital transformation, data governance,
+            and AI in society.
+          </div>
+
+          <div class="footer-social">
+            <a class="footer-social-link" href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Bluesky">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">CONTACT</div>
+          <div class="footer-contact">
+            <a href="ariful.m.islam@jyu.fi">ariful.m.islam@jyu.fi</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">BLOGPOST SUBSCRIPTION</div>
+          <div class="footer-sub-desc">
+            Enter your email address to receive updates
+          </div>
+
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Your email"
+            />
+            <button class="footer-btn" type="button">
+              Subscribe to blogpost series
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        Copyright © Meraz. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
