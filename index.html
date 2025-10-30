@@ -13,65 +13,99 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="index.html">Meraz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog Posts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+  <div class="container-fluid max-w-screen px-3">
+    <a class="navbar-brand navbar-brand-custom" href="index.html">
+      <span class="dot"></span>
+      <span>Meraz • Scientist</span>
+    </a>
+    <button class="navbar-toggler bg-dark-subtle border-0 py-1 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Hero Section -->
-    <header class="hero d-flex align-items-center">
-        <div class="container text-center text-white">
-            <h1 class="display-4 fw-bold">Hi, I'm Meraz</h1>
-            <p class="lead">I'm a scientist exploring the frontiers of research and innovation.</p>
-            <a href="about.html" class="btn btn-primary btn-lg mt-3">Discover More</a>
-        </div>
-    </header>
+    <header class="hero">
+  <div class="container max-w-screen px-3">
+    <div class="hero-inner">
+      <div class="hero-eyebrow">responsible digital transformation · data · society</div>
+
+      <h1 class="hero-title">
+        Hi, I'm Meraz — scientist and explorer of how data shapes responsible digital transformation.
+      </h1>
+
+      <p class="hero-desc">
+        I study how managers select and use data when they pursue responsible digital transformation goals.
+        My work sits between technology, governance, and ethics — and I translate that into research,
+        tools, and public communication.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="about.html" class="btn-primary-modern">About me</a>
+        <a href="projects.html" class="btn-ghost-modern">See projects</a>
+      </div>
+    </div>
+  </div>
+</header>
+
 
     <!-- My Work Section -->
-    <section id="work" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">My Work</h2>
-            <div class="row g-4">
-                <div class="col-md-4 text-center">
-                    <div class="p-4 border rounded-3 h-100">
-                        <i class="fa-solid fa-flask fa-3x mb-3 text-primary"></i>
-                        <h4 class="mb-2">Research</h4>
-                        <p class="mb-3">Explore my latest research and scientific contributions across various disciplines.</p>
-                        <a href="publications.html" class="stretched-link">Learn more</a>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="p-4 border rounded-3 h-100">
-                        <i class="fa-solid fa-project-diagram fa-3x mb-3 text-primary"></i>
-                        <h4 class="mb-2">Projects</h4>
-                        <p class="mb-3">A showcase of collaborative projects and innovative solutions I've worked on.</p>
-                        <a href="projects.html" class="stretched-link">View projects</a>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="p-4 border rounded-3 h-100">
-                        <i class="fa-solid fa-blog fa-3x mb-3 text-primary"></i>
-                        <h4 class="mb-2">Blog Posts</h4>
-                        <p class="mb-3">Read my insights on science, technology, and innovation.</p>
-                        <a href="blog.html" class="stretched-link">Read posts</a>
-                    </div>
-                </div>
-            </div>
+    <section class="section-block">
+  <div class="container max-w-screen px-3">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card-glass h-100">
+          <div class="card-label">Research Focus</div>
+          <div class="card-title">Responsible Digital Transformation</div>
+          <div class="card-desc">
+            How organizations align AI, data, and sustainability with societal expectations — not just profit.
+            I look at governance, accountability, and managerial decision-making.
+          </div>
+          <a class="card-link" href="publications.html">View publications →</a>
         </div>
-    </section>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-glass h-100">
+          <div class="card-label">Projects</div>
+          <div class="card-title">Tools, prototypes & experiments</div>
+          <div class="card-desc">
+            From AI-assisted knowledge tools to low-code apps, I build and test ideas that connect research
+            to practice and everyday use.
+          </div>
+          <a class="card-link" href="projects.html">See projects →</a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-glass h-100">
+          <div class="card-label">Public Voice</div>
+          <div class="card-title">Notes & posts</div>
+          <div class="card-desc">
+            Short reflections on tech, ethics, career in research, and survival in academia.
+            Human tone. No buzzword worship.
+          </div>
+          <a class="card-link" href="blog.html">Read the blog →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="bg-light py-5">
@@ -100,11 +134,26 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 bg-white border-top">
-        <div class="container text-center">
-            <small>&copy; 2025 Meraz. All rights reserved.</small>
-        </div>
-    </footer>
+    <footer>
+  <div class="container max-w-screen px-3">
+    <div class="text-center">
+      <div class="mb-2" style="color: var(--text-main); font-weight:600; letter-spacing:-0.03em;">
+        Meraz • The Explorer Scientist
+      </div>
+      <div class="mb-2">
+        <a href="mailto:your-email@example.com">email me</a>
+        &nbsp;·&nbsp;
+        <a href="about.html">about</a>
+        &nbsp;·&nbsp;
+        <a href="projects.html">projects</a>
+      </div>
+      <div style="color: var(--text-dim);">
+        © 2025. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8Cje1Yjk9RyS9y5Pip5a/pz+rzZJe9lSfa6r8Vt7oIOnc8UGlctkKqzUcRfET" crossorigin="anonymous"></script>
