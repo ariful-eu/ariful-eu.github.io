@@ -1,107 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Posts – Meraz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa4j1k0O1hWOy+9iZC1apNrlgW4tH1P5xbqZ6p5CEbcbe+lN63PhB5LYh9O" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yFhHeGWZAkOTUuEDtM+tT+fCt1wqioKXPRPtWNcVl/+x9n3dN1MGm03P6nXsoDiDBq6SXyrWaV+e7EwZp6rp7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Posts – Meraz</title>
+  <meta name="description" content="Thoughts on AI, responsibility, sustainability, and how data is actually used inside organizations." />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="index.html">Meraz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog Posts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page header -->
-    <header class="hero d-flex align-items-center">
-        <div class="container text-white">
-            <h1 class="display-4 fw-bold">Blog Posts</h1>
-            <p class="lead">Insights on science, technology, and innovation.</p>
-        </div>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-nav-shadow">
+    <div class="container px-3">
+      <a class="navbar-brand fw-semibold site-brand" href="index.html">Meraz</a>
 
-    <!-- Blog list -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="mb-4">Latest Articles</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">The Ethical Landscape of AI</h5>
-                            <p class="text-muted mb-2">September 2025</p>
-                            <p class="card-text">Examining the moral and societal considerations of deploying artificial intelligence in real-world settings.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="text-primary">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Trends in Quantum Computing</h5>
-                            <p class="text-muted mb-2">July 2025</p>
-                            <p class="card-text">An accessible overview of recent advances in quantum technologies and their implications for data processing.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="text-primary">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Harnessing Data for Sustainability</h5>
-                            <p class="text-muted mb-2">May 2025</p>
-                            <p class="card-text">Exploring how data analytics and AI can drive sustainability initiatives and responsible resource management.</p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="text-primary">Read more <i class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <footer>
-  <div class="container max-w-screen px-3">
-    <div class="text-center">
-      <div class="mb-2" style="color: var(--text-main); font-weight:600; letter-spacing:-0.03em;">
-        Meraz • The Explorer Scientist
-      </div>
-      <div class="mb-2">
-        <a href="mailto:your-email@example.com">email me</a>
-        &nbsp;·&nbsp;
-        <a href="about.html">about</a>
-        &nbsp;·&nbsp;
-        <a href="projects.html">projects</a>
-      </div>
-      <div style="color: var(--text-dim);">
-        © 2025. All rights reserved.
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 topnav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">BlogPosts</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</footer>
+  </nav>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8Cje1Yjk9RyS9y5Pip5a/pz+rzZJe9lSfa6r8Vt7oIOnc8UGlctkKqzUcRfET" crossorigin="anonymous"></script>
+  <!-- BLOG HIGHLIGHT SECTION (same visual style as homepage section) -->
+  <section class="blog-highlight" style="padding-top:4rem;">
+    <div class="container px-3">
+
+      <div class="blog-header text-center">
+        <h1 class="blog-heading" style="margin-bottom:1rem;">
+          Welcome to My Blog Posts
+        </h1>
+        <p class="blog-intro">
+          <strong>Artificial Intelligence (AI)</strong> is reshaping the way we
+          think, work, and innovate. In this series, I explore the key trends,
+          opportunities, and questions around this transformation — especially
+          in terms of responsibility, governance, and actual impact on people.
+        </p>
+      </div>
+
+      <div class="row align-items-start g-4 blog-row">
+        <!-- left image -->
+        <div class="col-lg-6">
+          <div class="blog-image-frame">
+            <img
+              src="images/blog-hero.jpg"
+              alt="Innovation concept"
+              class="img-fluid rounded-3 blog-image"
+            />
+          </div>
+        </div>
+
+        <!-- right topics -->
+        <div class="col-lg-6">
+          <div class="blog-topic">
+            <h2 class="blog-topic-title">The Latest Trends in AI</h2>
+            <p class="blog-topic-text">
+              How emerging technologies like generative models and machine
+              learning are transforming industries and creating new
+              opportunities.
+            </p>
+          </div>
+
+          <div class="blog-topic">
+            <h2 class="blog-topic-title">AI's Ethical and Societal Impacts</h2>
+            <p class="blog-topic-text">
+              Ensuring AI is developed responsibly: fairness, transparency,
+              accountability, and alignment with societal values.
+            </p>
+          </div>
+
+          <div class="blog-topic">
+            <h2 class="blog-topic-title">The Future of AI Innovation</h2>
+            <p class="blog-topic-text">
+              How AI is shaping the future of research, business, and everyday
+              life — and where it might take us next.
+            </p>
+          </div>
+
+          <div class="blog-row-linkwrap">
+            <a class="blog-row-link" href="#">More posts coming →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER BAND -->
+  <footer class="footer-band">
+    <div class="container px-3">
+      <div class="row gy-4 gx-5 align-items-start footer-row">
+
+        <div class="col-lg-4">
+          <div class="footer-name">Meraz</div>
+          <div class="footer-desc">
+            Showcasing my academic profile, projects, and ongoing thinking
+            around responsible digital transformation, data governance,
+            and AI in society.
+          </div>
+
+          <div class="footer-social">
+            <a class="footer-social-link" href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Bluesky">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">CONTACT</div>
+          <div class="footer-contact">
+            <a href="mailto:ariful.m.islam@jyu.fi">ariful.m.islam@jyu.fi</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="footer-col-heading">BLOGPOST SUBSCRIPTION</div>
+          <div class="footer-sub-desc">
+            Enter your email address to receive updates
+          </div>
+
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Your email"
+            />
+            <button class="footer-btn" type="button">
+              Subscribe to blogpost series
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        Copyright © Meraz, All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
