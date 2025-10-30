@@ -91,6 +91,8 @@ a:hover {
 
 .hero-left-inner {
   max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-name {
@@ -546,9 +548,15 @@ a:hover {
   }
 
   .hero-photo {
-    max-height: 360px;
-    width: 100%;
-  }
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 0;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
 
   .work-row {
     margin-top: 1.5rem;
