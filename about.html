@@ -1,156 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About – Meraz</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUa4j1k0O1hWOy+9iZC1apNrlgW4tH1P5xbqZ6p5CEbcbe+lN63PhB5LYh9O" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yFhHeGWZAkOTUuEDtM+tT+fCt1wqioKXPRPtWNcVl/+x9n3dN1MGm03P6nXsoDiDBq6SXyrWaV+e7EwZp6rp7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Meraz</title>
+  <meta name="description" content="About Meraz: responsible digital transformation, data governance, sustainability, and managerial decision-making with data." />
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container py-2">
-            <a class="navbar-brand fw-bold" href="index.html">Meraz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog Posts</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Page header -->
-    <header class="hero d-flex align-items-center">
-        <div class="container text-white">
-            <h1 class="display-4 fw-bold">About Me</h1>
-            <p class="lead">Learn more about my professional journey and academic background.</p>
-        </div>
-    </header>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom fixed-top custom-nav-shadow">
+    <div class="container px-3">
+      <a class="navbar-brand fw-semibold site-brand" href="index.html">Meraz</a>
 
-    <!-- Biography section -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-8">
-                    <h2 class="mb-3">My Career Journey</h2>
-                    <p>Over the years, I've had the privilege of conducting research, mentoring students, and collaborating with talented teams. My work spans across the sciences, exploring questions at the intersection of technology, society, and innovation. From academia to applied research projects, my goal is to push boundaries and contribute meaningful insights.</p>
-                    <p>This page provides an overview of my professional experiences and educational background. For a detailed list of projects and publications, please visit the respective pages.</p>
-                </div>
-                <div class="col-lg-4">
-                    <h3 class="mb-3">Quick Facts</h3>
-                    <ul class="list-unstyled">
-                        <li><strong>Role:</strong> Scientist & Researcher</li>
-                        <li><strong>Location:</strong> Jyväskylä, Finland</li>
-                        <li><strong>Expertise:</strong> Data science, technology innovation, sustainability</li>
-                    </ul>
-                </div>
-            </div>
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <!-- Timeline section -->
-            <section class="section-block">
-  <div class="container max-w-screen px-3">
-    <div class="row g-5">
-      <div class="col-md-6">
-        <div class="section-eyebrow">Career</div>
-        <h2 class="section-headline">Experience</h2>
-
-        <ul class="timeline">
-          <li class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-role">Doctoral Researcher – Responsible Digital Transformation</div>
-            <div class="timeline-org">University of Jyväskylä · Faculty of Information Technology</div>
-            <div class="timeline-dates">2024 → present</div>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 topnav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-
-          <li class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-role">Research Group: CPSS</div>
-            <div class="timeline-org">Data, sustainability, governance, digital ethics</div>
-            <div class="timeline-dates">Finland</div>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About</a>
           </li>
-
-          <li class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-role">Industry / Prototyping</div>
-            <div class="timeline-org">Applied AI tools, low-code apps, automation for real users</div>
-            <div class="timeline-dates">Ongoing</div>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">BlogPosts</a>
           </li>
         </ul>
       </div>
-
-      <div class="col-md-6">
-        <div class="section-eyebrow">Research interest</div>
-        <h2 class="section-headline">What I work on</h2>
-        <p>
-          I’m interested in how organizations claim to be “responsible,” and what that actually means in practice.
-          Who decides what is ‘responsible’? What data counts as evidence? Who gets left out?
-        </p>
-        <p>
-          Methodologically I combine qualitative work (manager interviews) with conceptual framing
-          from information systems, governance, and sustainability.
-        </p>
-      </div>
     </div>
-  </div>
-</section>
+  </nav>
 
 
-    <!-- Contact call to action -->
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <p>If you'd like to collaborate, ask questions, or just say hello, please reach out via email or connect with me on social media.</p>
-                    <div class="d-flex justify-content-center gap-3 mb-4">
-                        <a href="mailto:meraz@example.com" class="text-dark" aria-label="Email"><i class="fa-solid fa-envelope fa-2x"></i></a>
-                        <a href="#" class="text-dark" aria-label="Twitter"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-                        <a href="#" class="text-dark" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-                    </div>
-                    <form class="row g-3">
-                        <div class="col-md-9">
-                            <label for="subscribeEmail" class="visually-hidden">Email address</label>
-                            <input type="email" class="form-control" id="subscribeEmail" placeholder="Enter your email">
-                        </div>
-                        <div class="col-md-3">
-                            <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
+  <!-- PAGE HEADER / SUMMARY -->
+  <section class="work-section" style="padding-top:4rem;padding-bottom:2rem;">
+    <div class="container px-3" style="max-width:900px;">
+      <h1 class="work-heading" style="margin-bottom:1rem;">About Me</h1>
+      <p class="work-lead">
+        I study how managers select and use data when they pursue responsible
+        digital transformation goals. My work sits between data governance,
+        sustainability, and ethics. I'm interested in how organizations claim
+        responsibility — and what that actually looks like in practice.
+      </p>
+      <p class="work-lead">
+        I also explore how we can turn research ideas into practical tools,
+        lightweight prototypes, and decision support for real people inside
+        organizations.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- EXPERIENCE / TIMELINE -->
+  <section class="work-section" style="padding-top:0;">
+    <div class="container px-3">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <h2 class="work-row-title" style="text-decoration:none;margin-bottom:1rem;">Experience</h2>
+
+          <ul class="timeline" style="list-style:none;padding-left:0;margin:0;">
+            <li class="timeline-item" style="position:relative;margin-bottom:1.5rem;padding-left:1.5rem;">
+              <span class="timeline-dot" style="
+                position:absolute;
+                left:0;
+                top:.4rem;
+                width:.6rem;
+                height:.6rem;
+                border-radius:999px;
+                background:#4b91c9;
+                box-shadow:0 0 12px rgba(75,145,201,0.8);
+              "></span>
+              <div class="timeline-role" style="font-weight:600;color:#0f172a;">
+                Doctoral Researcher – Responsible Digital Transformation
+              </div>
+              <div class="timeline-org" style="color:#475569;font-size:.9rem;">
+                University of Jyväskylä · Faculty of Information Technology
+              </div>
+              <div class="timeline-dates" style="color:#94a3b8;font-size:.8rem;margin-top:.25rem;">
+                2024 → present
+              </div>
+            </li>
+
+            <li class="timeline-item" style="position:relative;margin-bottom:1.5rem;padding-left:1.5rem;">
+              <span class="timeline-dot" style="
+                position:absolute;
+                left:0;
+                top:.4rem;
+                width:.6rem;
+                height:.6rem;
+                border-radius:999px;
+                background:#4b91c9;
+                box-shadow:0 0 12px rgba(75,145,201,0.8);
+              "></span>
+              <div class="timeline-role" style="font-weight:600;color:#0f172a;">
+                CPSS Research Group / Responsible Digital Transformation
+              </div>
+              <div class="timeline-org" style="color:#475569;font-size:.9rem;">
+                Data, sustainability, governance, digital ethics
+              </div>
+              <div class="timeline-dates" style="color:#94a3b8;font-size:.8rem;margin-top:.25rem;">
+                Finland
+              </div>
+            </li>
+
+            <li class="timeline-item" style="position:relative;margin-bottom:1.5rem;padding-left:1.5rem;">
+              <span class="timeline-dot" style="
+                position:absolute;
+                left:0;
+                top:.4rem;
+                width:.6rem;
+                height:.6rem;
+                border-radius:999px;
+                background:#4b91c9;
+                box-shadow:0 0 12px rgba(75,145,201,0.8);
+              "></span>
+              <div class="timeline-role" style="font-weight:600;color:#0f172a;">
+                Applied Prototyping / AI-assisted tools
+              </div>
+              <div class="timeline-org" style="color:#475569;font-size:.9rem;">
+                Low-code apps, retrieval tools, workflow automations
+              </div>
+              <div class="timeline-dates" style="color:#94a3b8;font-size:.8rem;margin-top:.25rem;">
+                Ongoing
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
 
-    <footer>
-  <div class="container max-w-screen px-3">
-    <div class="text-center">
-      <div class="mb-2" style="color: var(--text-main); font-weight:600; letter-spacing:-0.03em;">
-        Meraz • The Explorer Scientist
-      </div>
-      <div class="mb-2">
-        <a href="mailto:your-email@example.com">email me</a>
-        &nbsp;·&nbsp;
-        <a href="about.html">about</a>
-        &nbsp;·&nbsp;
-        <a href="projects.html">projects</a>
-      </div>
-      <div style="color: var(--text-dim);">
-        © 2025. All rights reserved.
+        <div class="col-lg-6">
+          <h2 class="work-row-title" style="text-decoration:none;margin-bottom:1rem;">Research Interests</h2>
+          <p class="work-row-text">
+            • Responsible Digital Transformation  
+            • Data Governance & Accountability  
+            • Sustainability and Digital Ethics  
+            • Managerial decision-making with data  
+            • Translating academic thinking into tools people actually use
+          </p>
+
+          <p class="work-row-text">
+            Methodologically I combine qualitative inquiry (interviews with
+            managers, decision-makers, responsible AI people, etc.) with
+            conceptual framing from information systems, governance, and
+            sustainability studies.
+          </p>
+
+          <p class="work-row-text">
+            My core question: <em>Who decides what “responsible” means, and what
+            evidence (data) is considered legitimate in that decision?</em>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </section>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA8Cje1Yjk9RyS9y5Pip5a/pz+rzZJe9lSfa6r8Vt7oIOnc8UGlctkKqzUcRfET" crossorigin="anonymous"></script>
+  <!-- FOOTER BAND -->
+  <footer class="footer-band">
+    <div class="container px-3">
+      <div class="row gy-4 gx-5 align-items-start footer-row">
+
+        <!-- left -->
+        <div class="col-lg-4">
+          <div class="footer-name">Meraz</div>
+          <div class="footer-desc">
+            Showcasing my academic profile, projects, and ongoing thinking
+            around responsible digital transformation, data governance,
+            and AI in society.
+          </div>
+
+          <div class="footer-social">
+            <a class="footer-social-link" href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="Bluesky">
+              <i class="fa-solid fa-feather-pointed"></i>
+            </a>
+            <a class="footer-social-link" href="#" aria-label="X / Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- middle -->
+        <div class="col-lg-4">
+          <div class="footer-col-heading">CONTACT</div>
+          <div class="footer-contact">
+            <a href="mailto:your-email@example.com">ariful.m.islam@jyu.fi</a>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="col-lg-4">
+          <div class="footer-col-heading">BLOGPOST SUBSCRIPTION</div>
+          <div class="footer-sub-desc">
+            Enter your email address to receive updates
+          </div>
+
+          <form class="footer-form">
+            <input
+              type="email"
+              class="footer-input"
+              placeholder="Your email"
+            />
+            <button class="footer-btn" type="button">
+              Subscribe to blogpost series
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom text-center">
+        Copyright © Meraz. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
